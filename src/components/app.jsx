@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import Home from './home/home';
 
-import './app.scss';
+import Content from './content';
+import Navbar from './navbar'
 
 export default class App extends Component {
 
   render() {
     return (
-      <Router>
-        <div className='navigator'>
-          <Route path="/" exact component={Home} />
-        </div>
-      </Router>
+      <div className='page'>
+        <Navbar></Navbar>
+        {/* <SearchBar></SearchBar> */}
+        <Content></Content>
+      </div>
     );
   }
+
 }
