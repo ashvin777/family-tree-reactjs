@@ -9,7 +9,6 @@ export default class App extends Component {
     return (
       <div className='page'>
         <Navbar></Navbar>
-        {/* <SearchBar></SearchBar> */}
         <Content></Content>
       </div>
     );

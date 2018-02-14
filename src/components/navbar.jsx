@@ -9,9 +9,7 @@ export default class Navbar extends Component {
         <div className="subtitle">
           <span>250 members</span>
         </div>
-        <div className="profile">
-
-        </div>
+        <div className="profile"></div>
       </div>
     );
   }

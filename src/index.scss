@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Sacramento');
 @import './consts';
-
-html, body, #root, .navigator{
+html,
+body,
+#root,
+.navigator {
   height: 100%;
-  font-family: 'Roboto Slab', serif;  
+  font-family: 'Roboto Slab', serif;
 }
 
 body {
@@ -13,43 +15,54 @@ body {
   color: $light-black;
 }
 
-.navbar{
-  padding: 1rem;
+input {
+  appearance: none;
+  width: 100%;
+  border: 0;
+  box-shadow: 0 0 5px $light-gray;
+  border-radius: 20px;
+  padding: 0.5rem;
+}
 
-  .title{
+.navbar {
+  padding: 1rem;
+  padding-bottom: 0.5rem;
+
+  .title {
     font-family: 'Sacramento', cursive;
     font-size: 2rem;
     padding: 1rem 0;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
   }
 
-  .subtitle{
+  .subtitle {
     font-size: 0.75rem;
     color: $gray;
-    text-align: center;
     position: relative;
+    font-weight: lighter;
 
-    span{
+    span {
       margin: auto;
       display: inline-block;
       position: relative;
       background: white;
-      padding: 0 1rem;
+      padding-right: 0.5rem;
     }
 
-    &:before{
+    &:before {
       content: '';
-      height: 1px;
-      width: 100%;
-      background: $light-gray;
-      display: inline-block;
       position: absolute;
+      width: 100%;
       left: 0;
       top: 50%;
+      height: 1px;
       transform: translateY(-50%);
+      background: $light-gray;
     }
   }
 }
 
-.content{
-  padding: 1rem;
+.content {
+  padding: 0 1rem;
 }
